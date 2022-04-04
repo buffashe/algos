@@ -2,10 +2,10 @@
 # https://unix.stackexchange.com/questions/503487/why-does-echo-e-n-give-me-two-blank-lines-instead-of-one
 # https://linuxize.com/post/bash-check-if-file-exists/
 
-if [ -d "$1" ]; then
-    echo "$1 exists."
+if [ -d "acmicpc/$1" ]; then
+    echo "acmicpc/$1 exists."
 else 
-    mkdir $1
+    mkdir acmicpc/$1
     echo "#include <cstdio>
 #include <cstdlib>
 #include <iostream>
@@ -13,9 +13,10 @@ else
 
 using namespace std;
 
-int main() {
+int main()
+{
     
     return 0;
-}" > $1/$1.cc
-    echo "" > $1/input$1.txt
+}" > acmicpc/$1/$1.cc
+    printf '' > acmicpc/$1/input$1.txt
 fi

@@ -7,21 +7,19 @@ using namespace std;
 
 int main()
 {
-    int h, m;
+    int c;
+    cin >> c;
 
-    cin >> h >> m;
-
-    if ((m = m - 45) < 0)
+    int a, b;
+    for (size_t i = 0; i < c;)
     {
-        m = m + 60;
-        h--;
-        if (h < 0)
+        cin >> a >> b;
+        cout << a + b;
+        if (++i != c)
         {
-            h = 23;
+            cout << endl;
         }
     }
-
-    cout << h << " " << m;
 
     return 0;
 }
