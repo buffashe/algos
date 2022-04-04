@@ -7,15 +7,16 @@ using namespace std;
 
 int main()
 {
-    int a, b, t;
+    int a;
+    cin >> a;
 
-    scanf("%d", &t);
+    int i = 1;
 
-    while (t > 0)
+    while (i <= a)
     {
-        scanf("%d %d", &a, &b);
-        printf("%d", a + b);
-        if (--t != 0)
+        printf("%d", i);
+
+        if (i++ != a)
         {
             printf("\n");
         }

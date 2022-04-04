@@ -7,15 +7,17 @@ using namespace std;
 
 int main()
 {
-    int a, b, t;
+    int n;
 
-    scanf("%d", &t);
+    scanf("%d", &n);
 
-    while (t > 0)
+    for (size_t i = 0; i < n; i++)
     {
-        scanf("%d %d", &a, &b);
-        printf("%d", a + b);
-        if (--t != 0)
+        for (size_t j = 0; j <= i; j++)
+        {
+            printf("*");
+        }
+        if (i < n - 1)
         {
             printf("\n");
         }

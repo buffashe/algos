@@ -7,15 +7,14 @@ using namespace std;
 
 int main()
 {
-    int a, b, t;
+    int a;
+    cin >> a;
 
-    scanf("%d", &t);
-
-    while (t > 0)
+    while (a > 0)
     {
-        scanf("%d %d", &a, &b);
-        printf("%d", a + b);
-        if (--t != 0)
+        printf("%d", a);
+
+        if (a-- > 1)
         {
             printf("\n");
         }

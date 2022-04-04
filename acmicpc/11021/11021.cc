@@ -11,11 +11,13 @@ int main()
 
     scanf("%d", &t);
 
-    while (t > 0)
+    int i = 1;
+    while (i <= t)
     {
         scanf("%d %d", &a, &b);
-        printf("%d", a + b);
-        if (--t != 0)
+        printf("Case #%d: %d", i, a + b);
+
+        if (i++ < t)
         {
             printf("\n");
         }
