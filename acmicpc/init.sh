@@ -6,6 +6,16 @@ if [ -d "$1" ]; then
     echo "$1 exists."
 else 
     mkdir $1
-    printf '#include <cstdio>\n#include <cstdlib>\n#include <iostream>\n#include <algorithm>\n\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}' > $1/$1.cc
-    printf '' > $1/input$1.txt
+    echo "#include <cstdio>
+#include <cstdlib>
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+    
+    return 0;
+}" > $1/$1.cc
+    echo "" > $1/input$1.txt
 fi
