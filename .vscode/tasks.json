@@ -9,7 +9,8 @@
                 "${file}",
                 "-o",
                 "${fileBasenameNoExtension}",
-                "-Oz;",
+                "-Oz",
+                "-std=c++17;",
                 "echo",
                 "----------------------------;",
                 "./${fileBasenameNoExtension}",
@@ -29,6 +30,7 @@
             "command": "/usr/bin/clang++",
             "args": [
                 "-fdiagnostics-color=always",
+                "-std=c++17;",
                 "-g",
                 "${file}",
                 "-o",
