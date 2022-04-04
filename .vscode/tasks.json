@@ -1,0 +1,29 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "clang++ build and run active file",
+			"command": "/usr/bin/clang++",
+			"args": [
+				//"-g",
+				"${file}",
+				"-o",
+				"${fileBasenameNoExtension}",
+				"-Oz;",
+				"./${fileBasenameNoExtension}",
+				"<",
+				"${fileDirname}/input.txt;",
+				"/bin/rm",
+				"${fileBasenameNoExtension};",
+				//"/bin/rm",
+				//"-R",
+				//"${fileBasenameNoExtension}.dSYM"
+			],
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		}
+	]
+}
