@@ -4,8 +4,7 @@
 
 ### leetcode
 
-- [ ] 691
-    - https://leetcode.com/problems/stickers-to-spell-word/
+- [ ] 691 https://leetcode.com/problems/stickers-to-spell-word/
 
 ### acmicpc
 
@@ -15,8 +14,7 @@
 
 ### leetcode
 
-- [x] 383
-    - https://leetcode.com/problems/ransom-note
+- [x] 383 https://leetcode.com/problems/ransom-note
 
 ### acmicpc
 
