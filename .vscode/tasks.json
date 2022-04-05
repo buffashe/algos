@@ -3,7 +3,7 @@
     "tasks": [
         {
             "type": "shell",
-            "label": "clang++ build and run active file",
+            "label": "(acmicpc)clang++ build and run active file",
             "command": "/usr/bin/clang++",
             "args": [
                 "${file}",
@@ -18,6 +18,9 @@
                 "${fileDirname}/input${fileBasenameNoExtension}.txt;",
                 "/bin/rm",
                 "${fileBasenameNoExtension};"
+//                "/bin/rm",
+//				"-R",
+//				"${fileDirname}/${fileBasenameNoExtension}.dSYM"
             ],
             "problemMatcher": [
                 "$gcc"
@@ -30,7 +33,7 @@
             "command": "/usr/bin/clang++",
             "args": [
                 "-fdiagnostics-color=always",
-                "-std=c++17;",
+                "-std=c++17",
                 "-g",
                 "${file}",
                 "-o",
