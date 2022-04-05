@@ -13,6 +13,7 @@
 *.exe
 *.ilk
 *.dSYM/*
+*.dSYM
 *.xml
 *.cmake
 *.plist
