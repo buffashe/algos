@@ -3,6 +3,8 @@
         "chrono": "cpp",
         "cstdlib": "cpp",
         "iostream": "cpp",
-        "list": "cpp"
+        "list": "cpp",
+        "ios": "cpp",
+        "istream": "cpp"
     }
 }
