@@ -3,7 +3,7 @@
     "tasks": [
         {
             "type": "shell",
-            "label": "(acmicpc)clang++ build and run active file",
+            "label": "(algos)clang++ build and run active file",
             "command": "/usr/bin/clang++",
             "args": [
                 "${file}",
