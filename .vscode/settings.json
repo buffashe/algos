@@ -5,6 +5,7 @@
         "iostream": "cpp",
         "list": "cpp",
         "ios": "cpp",
-        "istream": "cpp"
+        "istream": "cpp",
+        "bitset": "cpp"
     }
 }
