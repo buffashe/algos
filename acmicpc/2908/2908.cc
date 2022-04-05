@@ -8,8 +8,6 @@ using namespace std;
 int main()
 {
     string A, B;
-    // char A[4] = {0}, B[4] = {0};
-    // char A[4] = {2, 2, 1, 0}, B[4] = {2, 3, 1, 0};
     int ia, ib;
     cin >> A >> B;
     char temp;
