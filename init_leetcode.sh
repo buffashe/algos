@@ -13,8 +13,15 @@ else
 
 using namespace std;
 
+class Solution
+{
+public:
+    
+};
+
 int main()
 {
+    Solution s;
     
     return 0;
 }" > leetcode/$1/$1.cc
