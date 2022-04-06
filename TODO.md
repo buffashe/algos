@@ -8,7 +8,7 @@
 
 ### acmicpc
 
-- [ ] 1316
+- none
 
 ## Done ✓
 
@@ -18,4 +18,4 @@
 
 ### acmicpc
 
-- none
+- [x] 1316
