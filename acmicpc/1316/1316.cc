@@ -7,24 +7,27 @@ using namespace std;
 
 bool isGroupWord(string s)
 {
-    /*
-    int dict['z' - 'a' + 1] = {0};
-    char prev = s[0];
-
-    for (size_t i = 'a'; i < 'z'; i++)
-    {
-
-    }
-    
+    bool appearance['z' - 'a' + 1];
+    fill(appearance, appearance + 'z' - 'a' + 1, false);
+    char prev = 0;
 
     for (size_t i = 0; i < s.length(); i++)
     {
-        
+        if (prev != s[i])
+        {
+            if (!appearance[s[i] - 'a'])
+            {
+                appearance[s[i] - 'a'] = true;
+                prev = s[i];
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
-    */
-    
 
-    return false;
+    return true;
 }
 
 int main()
@@ -43,6 +46,8 @@ int main()
             groupWordCnt++;
         }
     }
+
+    cout << groupWordCnt;
 
     return 0;
 }
