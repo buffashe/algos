@@ -8,7 +8,7 @@
 
 ### acmicpc
 
-- none
+- [ ] 2869
 
 ## Done ✓
 
